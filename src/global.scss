@@ -1,0 +1,264 @@
+/*
+* App Global CSS
+* ----------------------------------------------------------------------------
+* Put style rules here that you want to apply globally. These styles are for
+* the entire app and not just one component. Additionally, this file can be
+* used as an entry point to import other CSS/Sass files to be included in the
+* output CSS.
+* For more information on global stylesheets, visit the documentation:
+* https://ionicframework.com/docs/layout/global-stylesheets
+*/
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+/* CSS - Configurações Gerais de Estilo */
+
+ion-content.background{
+    --background: #ffffff;
+  }
+ion-tab-bar{       
+    background:rgb(175, 12, 12);  
+}
+ion-tab-button:hover {    
+    background-color: #FF4500;      
+    border-radius: 5px; 
+  }
+
+ion-label{
+    font-size: small;
+    
+}
+ion-card{
+    margin: 5px;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+}
+ion-tab-button {
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    color: #ffffff;   
+    width: fit-content;
+    background-color:transparent; 
+    --color-focused:rgb(117, 6, 6);
+}
+ion-item {    
+    --background-hover:rgba(175, 12, 12, 0.863);  
+    --background-hover-opacity:0.9;
+    --color-activated:rgba(175, 12, 12, 0.863);  
+    --color-hover:white;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+}
+ion-toolbar {
+    --background:rgb(175, 12, 12);
+    --color:white;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+}
+
+.toobar-footer {
+--background:rgb(255, 255, 255);    
+}
+
+span{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+}
+.p-title{   
+    margin-left: 10px; 
+    margin-top: 20px;
+    font-size:medium;
+    font-weight: bold;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+}
+.p-divider {      
+    font-weight: bolder;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+}
+.p-texto{    
+    color: black; 
+    font-size: small;
+    text-align: justify;
+    word-wrap: break-word;
+    height: fit-content;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-indent: 10px;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+} 
+.p-texto05{    
+    color: black; 
+    font-size: small;
+    text-align: justify;
+    word-wrap: break-word;
+    height: fit-content;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-indent: 15px;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+} 
+.p-textoUP{    
+    color: black; 
+    font-size: small;
+    text-align: justify;
+    word-wrap: break-word;
+    height: fit-content;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-indent: 15px; 
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+} 
+.p-texto-small {
+    color: rgb(0, 0, 0); 
+    font-size: smaller;
+    text-align: justify;
+    word-wrap: break-word;
+    text-align: center;
+    height: fit-content;
+    margin-left: 10px;
+    margin-right: 10px;   
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+}  
+
+.ion-img {    
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;     
+}
+
+.icon-red{
+    color:rgb(175, 12, 12);
+    padding-right: 5px;
+}
+.icon-contato {
+    width:18px;
+    height:18px;  
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: -5px;
+}
+.thumbnail-contato {
+    --size:small;
+}
+
+
+/*CSS de Lista não ordernada*/
+.ul-li-white {    
+    color: rgb(255, 255, 255); 
+    text-align: justify;
+    font-size: small;
+    word-wrap: break-word;
+    height: fit-content;  
+    padding-right: 5px;      
+}  
+
+.ul-li {    
+    color: rgb(0, 0, 0); 
+    text-align: justify;
+    font-size: small;
+    word-wrap: break-word;
+    height: fit-content;  
+    padding-right: 5px;      
+}
+.card-list:hover{
+    background: #750808;
+
+}
+
+/* Responsivo Display Mobile*/
+@media screen and (max-width: 768px) {
+
+span {
+display: none;
+}   
+.ion-img {
+    margin-top: 15px;
+}
+.ion-toolbar{
+    --background: #750808;
+    height: 25px;
+    }
+    
+}
+@media screen and (min-width: 769px) {
+    .ion-toolbar{
+        display: none;
+    }
+}
+
+
+
+   
+    
+    
