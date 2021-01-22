@@ -90,10 +90,7 @@ ion-toolbar {
 --background:rgb(255, 255, 255);    
 }
 
-span{
-    text-transform: uppercase;
-    color: white;
-    font-weight: bold;
+.span{   
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
     -webkit-user-select: none;    /* Chrome, Safari 3 */
     -khtml-user-select: none;     /* Safari 2 */
@@ -239,7 +236,7 @@ span{
 /* Responsivo Display Mobile*/
 @media screen and (max-width: 768px) {
 
-span {
+.span {
 display: none;
 }   
 .ion-img {
