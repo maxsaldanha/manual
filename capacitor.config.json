@@ -1,6 +1,6 @@
 {
   "appId": "io.ionic.starter",
-  "appName": "manualBioslab",
+  "appName": "Manual Bioslab",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",

@@ -32,15 +32,16 @@ ion-content.background{
   }
 ion-tab-bar{       
     background:rgb(175, 12, 12);  
+   align-items:left;
 }
+
 ion-tab-button:hover {    
-    background-color: #FF4500;      
+    background-color: #d6c8c2;      
     border-radius: 5px; 
   }
 
 ion-label{
-    font-size: small;
-    
+    font-size: small;    
 }
 ion-card{
     margin: 5px;
@@ -65,9 +66,8 @@ ion-tab-button {
 }
 ion-item {    
     --background-hover:rgba(175, 12, 12, 0.863);  
-    --background-hover-opacity:0.9;
-    --color-activated:rgba(175, 12, 12, 0.863);  
-    --color-hover:white;
+    --background-hover-opacity:0.9;    
+    --color-hover:white;    
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
     -webkit-user-select: none;    /* Chrome, Safari 3 */
     -khtml-user-select: none;     /* Safari 2 */
@@ -85,12 +85,18 @@ ion-toolbar {
     -ms-user-select: none;        /* IE10+ */
     user-select: none;            /* Possível implementação no futuro */
 }
-
+ion-icon, ion-item:hover{    
+    color:rgba(255, 255, 255, 0.863);     
+}
 .toobar-footer {
---background:rgb(255, 255, 255);    
+    height: fit-content;
+    --background:rgb(255, 255, 255);    
 }
 
-.span{   
+span{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
     -webkit-user-select: none;    /* Chrome, Safari 3 */
     -khtml-user-select: none;     /* Safari 2 */
@@ -170,7 +176,7 @@ ion-toolbar {
 } 
 .p-texto-small {
     color: rgb(0, 0, 0); 
-    font-size: smaller;
+    font-size: x-small;
     text-align: justify;
     word-wrap: break-word;
     text-align: center;
@@ -199,11 +205,11 @@ ion-toolbar {
     padding-right: 5px;
 }
 .icon-contato {
-    width:18px;
-    height:18px;  
+    width:10px;
+    height:10px;  
     margin-right: 2px;
     margin-left: 2px;
-    margin-bottom: -5px;
+    margin-bottom: -2px;
 }
 .thumbnail-contato {
     --size:small;
@@ -236,26 +242,10 @@ ion-toolbar {
 /* Responsivo Display Mobile*/
 @media screen and (max-width: 768px) {
 
-.span {
-display: none;
-}   
-.ion-img {
-    margin-top: 15px;
+    span {
+    display: none;
+    }   
+    .ion-img {
+        margin-top: 15px;
+    }    
 }
-.ion-toolbar{
-    --background: #750808;
-    height: 25px;
-    }
-    
-}
-@media screen and (min-width: 769px) {
-    .ion-toolbar{
-        display: none;
-    }
-}
-
-
-
-   
-    
-    
