@@ -27,23 +27,27 @@
 
 /* CSS - Configurações Gerais de Estilo */
 
-ion-content.background{
+ion-content.background {
     --background: #ffffff;
-  }
-ion-tab-bar{       
-    background:rgb(175, 12, 12);  
-   align-items:left;
+}
+
+ion-tab-bar {        
+    background:rgb(175, 12, 12); 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 3px;
 }
 
 ion-tab-button:hover {    
-    background-color: #d6c8c2;      
+    background-color: var(--ion-hover);      
     border-radius: 5px; 
-  }
+}
 
-ion-label{
+ion-label {
     font-size: small;    
 }
-ion-card{
+
+ion-card {
     margin: 5px;
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
     -webkit-user-select: none;    /* Chrome, Safari 3 */
@@ -52,6 +56,7 @@ ion-card{
     -ms-user-select: none;        /* IE10+ */
     user-select: none;            /* Possível implementação no futuro */
 }
+
 ion-tab-button {
     padding: 1px;
     display: flex;
@@ -64,10 +69,11 @@ ion-tab-button {
     background-color:transparent; 
     --color-focused:rgb(117, 6, 6);
 }
-ion-item {    
-    --background-hover:rgba(175, 12, 12, 0.863);  
-    --background-hover-opacity:0.9;    
-    --color-hover:white;    
+
+.ion-item {    
+    --background-hover: var(--ion-hover);  
+    --background-hover-opacity:1;  
+    --color-hover:white;     
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
     -webkit-user-select: none;    /* Chrome, Safari 3 */
     -khtml-user-select: none;     /* Safari 2 */
@@ -75,9 +81,10 @@ ion-item {
     -ms-user-select: none;        /* IE10+ */
     user-select: none;            /* Possível implementação no futuro */
 }
+
 ion-toolbar {
-    --background:rgb(175, 12, 12);
-    --color:white;
+    --background:var(--bg-toolbar);
+    --color:white;    
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
     -webkit-user-select: none;    /* Chrome, Safari 3 */
     -khtml-user-select: none;     /* Safari 2 */
@@ -85,8 +92,20 @@ ion-toolbar {
     -ms-user-select: none;        /* IE10+ */
     user-select: none;            /* Possível implementação no futuro */
 }
-ion-icon, ion-item:hover{    
+
+ion-icon, .ion-item:hover {    
     color:rgba(255, 255, 255, 0.863);     
+}
+.home {    
+    --background:transparent;
+    --color:white;   
+    padding-left: 10px;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
 }
 .toobar-footer {
     height: fit-content;
@@ -104,6 +123,7 @@ span{
     -ms-user-select: none;        /* IE10+ */
     user-select: none;            /* Possível implementação no futuro */
 }
+
 .p-title{   
     margin-left: 10px; 
     margin-top: 20px;
@@ -116,6 +136,7 @@ span{
     -ms-user-select: none;        /* IE10+ */
     user-select: none;            /* Possível implementação no futuro */
 }
+
 .p-divider {      
     font-weight: bolder;
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
@@ -125,6 +146,7 @@ span{
     -ms-user-select: none;        /* IE10+ */
     user-select: none;            /* Possível implementação no futuro */
 }
+
 .p-texto{    
     color: black; 
     font-size: small;
@@ -141,6 +163,7 @@ span{
     -ms-user-select: none;        /* IE10+ */
     user-select: none;            /* Possível implementação no futuro */
 } 
+
 .p-texto05{    
     color: black; 
     font-size: small;
@@ -157,7 +180,8 @@ span{
     -ms-user-select: none;        /* IE10+ */
     user-select: none;            /* Possível implementação no futuro */
 } 
-.p-textoUP{    
+
+.p-textoUP {    
     color: black; 
     font-size: small;
     text-align: justify;
@@ -173,7 +197,8 @@ span{
     -moz-user-select: none;       /* Firefox */
     -ms-user-select: none;        /* IE10+ */
     user-select: none;            /* Possível implementação no futuro */
-} 
+}
+
 .p-texto-small {
     color: rgb(0, 0, 0); 
     font-size: x-small;
@@ -200,10 +225,11 @@ span{
     padding: 10px;     
 }
 
-.icon-red{
+.icon-red {
     color:rgb(175, 12, 12);
     padding-right: 5px;
 }
+
 .icon-contato {
     width:10px;
     height:10px;  
@@ -211,10 +237,13 @@ span{
     margin-left: 2px;
     margin-bottom: -2px;
 }
+
 .thumbnail-contato {
     --size:small;
 }
-
+.img {    
+    margin: 5px;
+}
 
 /*CSS de Lista não ordernada*/
 .ul-li-white {    
@@ -234,13 +263,9 @@ span{
     height: fit-content;  
     padding-right: 5px;      
 }
-.card-list:hover{
-    background: #750808;
-
-}
 
 /* Responsivo Display Mobile*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     span {
     display: none;
@@ -248,4 +273,20 @@ span{
     .ion-img {
         margin-top: 15px;
     }    
+    .home{    
+        margin: 0px;   
+        padding: 0px;
+        font-size: xx-small;
+    }
+    ion-tab-bar {        
+        background:rgb(175, 12, 12);  
+        margin: 0px;   
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px; 
+    }
+    .img {
+        width: 35px;
+        height: 35px;
+        margin-right: 5px;
+    }
 }
