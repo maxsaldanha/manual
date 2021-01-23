@@ -70,7 +70,7 @@ ion-tab-button {
     --color-focused:rgb(117, 6, 6);
 }
 
-.ion-item {    
+ion-item {    
     --background-hover: var(--ion-hover);  
     --background-hover-opacity:1;  
     --color-hover:white;     
@@ -93,9 +93,7 @@ ion-toolbar {
     user-select: none;            /* Possível implementação no futuro */
 }
 
-ion-icon, .ion-item:hover {    
-    color:rgba(255, 255, 255, 0.863);     
-}
+
 .home {    
     --background:transparent;
     --color:white;   
@@ -276,17 +274,12 @@ span{
     .home{    
         margin: 0px;   
         padding: 0px;
-        font-size: xx-small;
-    }
-    ion-tab-bar {        
-        background:rgb(175, 12, 12);  
-        margin: 0px;   
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px; 
+        font-size: x-small;
     }
     .img {
         width: 35px;
         height: 35px;
         margin-right: 5px;
     }
+    
 }
