@@ -34,12 +34,12 @@ ion-content.background {
 ion-tab-bar {        
     background:rgb(175, 12, 12); 
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin: 3px;
+    border-top-right-radius: 10px;  
+    margin: 3px; 
 }
 
 ion-tab-button:hover {    
-    background-color: var(--ion-hover);      
+    background-color: var(--ion-hover-tab);      
     border-radius: 5px; 
 }
 
@@ -105,6 +105,18 @@ ion-toolbar {
     -ms-user-select: none;        /* IE10+ */
     user-select: none;            /* Possível implementação no futuro */
 }
+.p-home {
+    font-size: x-large;
+    --background:transparent;
+    --color:white;   
+    padding-left: 10px;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+}
 .toobar-footer {
     height: fit-content;
     --background:rgb(255, 255, 255);    
@@ -113,6 +125,7 @@ ion-toolbar {
 span{
     text-transform: uppercase;
     color: white;
+    margin: 3px;
     font-weight: bold;
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
     -webkit-user-select: none;    /* Chrome, Safari 3 */
@@ -280,6 +293,24 @@ span{
         width: 35px;
         height: 35px;
         margin-right: 5px;
+    }
+    .p-home {
+        font-size: small;
+        --background:transparent;
+        --color:white;   
+        padding-left: 10px;
+        -webkit-touch-callout: none;  /* iPhone OS, Safari */
+        -webkit-user-select: none;    /* Chrome, Safari 3 */
+        -khtml-user-select: none;     /* Safari 2 */
+        -moz-user-select: none;       /* Firefox */
+        -ms-user-select: none;        /* IE10+ */
+        user-select: none;            /* Possível implementação no futuro */
+    }
+    ion-tab-bar {        
+        background:rgb(175, 12, 12); 
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;  
+       
     }
     
 }
