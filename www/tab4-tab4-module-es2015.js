@@ -124,7 +124,7 @@ Tab4PageRoutingModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-content [fullscreen]=\"true\">\n  \n</ion-content>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-content [fullscreen]=\"true\">\n    <ion-list> \n        <ion-item-divider><p class=\"p-divider\">Como faço para ...</p></ion-item-divider>\n    </ion-list>\n</ion-content>\n");
 
 /***/ }),
 

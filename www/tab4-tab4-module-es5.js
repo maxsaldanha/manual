@@ -224,7 +224,7 @@
       /* harmony default export */
 
 
-      __webpack_exports__["default"] = "<ion-content [fullscreen]=\"true\">\n  \n</ion-content>\n";
+      __webpack_exports__["default"] = "<ion-content [fullscreen]=\"true\">\n    <ion-list> \n        <ion-item-divider><p class=\"p-divider\">Como faço para ...</p></ion-item-divider>\n    </ion-list>\n</ion-content>\n";
       /***/
     },
 

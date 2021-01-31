@@ -1,9 +1,21 @@
   <ion-header>
     <ion-toolbar>
-      <ion-item class="home" lines="none">
-        <img src="/assets/icon/icon-bioslab.png" class="img">
-        <p class="p-home"><strong>BIOSLAB - Manual do Usuário</strong> </p>
-      </ion-item>      
+      <ion-row>
+        <ion-col>
+          <ion-item class="home" lines="none">
+            <img src="/assets/icon/icon-bioslab.svg" class="img">
+              <p class="p-home"><strong>BIOSLAB - Manual do Usuário</strong> </p>        
+          </ion-item> 
+        </ion-col>
+        <ion-col class="span">
+          <p class="p-texto-small">   
+            Contato:  
+            <img src="../assets/icon/TELEFONE.png" class="icon-contato"> (21) 3622-6400
+            <img src="../assets/icon/whatsapp-logo-1.png" class="icon-contato"> (21) 99311-9141
+            <img src="../assets/icon/icone-email.png" class="icon-contato"> suporte@karyon.com.br
+          </p>
+        </ion-col>
+      </ion-row>           
     </ion-toolbar>
   </ion-header>
   
@@ -11,33 +23,34 @@
     <ion-tabs>            
       <ion-tab-bar slot="top" >       
         <ion-tab-button tab="tab1"> 
-          <ion-thumbnail><img src="/assets/icon/atendimento.png"></ion-thumbnail>         
-         <span>Atendimento</span>  
+          <ion-icon class="big" src="/assets/icon/atendimento.svg"></ion-icon>   
+          <label class="span">Atendimento</label>   
         </ion-tab-button>
     
         <ion-tab-button tab="tab2">   
-          <ion-thumbnail><img src="/assets/icon/microscopio-biologico.png"></ion-thumbnail>   
-          <span>Análise</span>
+          <ion-icon class="big" src="/assets/icon/microscopioamarelo.svg"></ion-icon>   
+          <label class="span">Análise</label>
         </ion-tab-button>
     
         <ion-tab-button tab="tab3">    
-          <ion-thumbnail><img src="/assets/icon/financeiro.png"></ion-thumbnail>     
-          <span>Financeiro</span>
+         <ion-icon class="big" src="/assets/icon/calculadora.svg"></ion-icon>   
+          <label class="span">Financeiro</label>
         </ion-tab-button>
     
         <ion-tab-button tab="tab4">   
-          <ion-thumbnail><img src="/assets/icon/vida-financeira.png"></ion-thumbnail>      
-          <span>Estatístico</span>
+          <ion-icon class="big" src="/assets/icon/estatistico.svg"></ion-icon>      
+          <label class="span">Estatístico</label>
         </ion-tab-button>
     
         <ion-tab-button tab="tab5">    
-          <ion-thumbnail><img src="/assets/icon/configuracao2.png"></ion-thumbnail>    
-          <span>Configurações</span>
+          <ion-icon class="big" src="/assets/icon/desenhando.svg"></ion-icon>    
+          <label class="span">Configurações</label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
   
   </ion-content>
+  
  
 
   

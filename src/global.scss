@@ -93,6 +93,21 @@ ion-toolbar {
     user-select: none;            /* Possível implementação no futuro */
 }
 
+ion-icon {
+    &.big {
+      width: 40px;
+      height: 40px;
+    }
+  
+    &.bigger {
+      width: 100px;
+      height: 100px;
+    }
+  
+    &.red {
+      color: rgb(255, 255, 255);
+    }
+}
 
 .home {    
     --background:transparent;
@@ -122,10 +137,8 @@ ion-toolbar {
     --background:rgb(255, 255, 255);    
 }
 
-span{
-    text-transform: uppercase;
-    color: white;
-    margin: 3px;
+.span{
+    color: white;    
     font-weight: bold;
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
     -webkit-user-select: none;    /* Chrome, Safari 3 */
@@ -211,14 +224,15 @@ span{
 }
 
 .p-texto-small {
-    color: rgb(0, 0, 0); 
-    font-size: x-small;
+    color: rgb(255, 255, 255); 
+    font-size: small;
     text-align: justify;
     word-wrap: break-word;
-    text-align: center;
+    text-align: right;
     height: fit-content;
     margin-left: 10px;
-    margin-right: 10px;   
+    margin-right: 10px; 
+    margin-top: 30px;  
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
     -webkit-user-select: none;    /* Chrome, Safari 3 */
     -khtml-user-select: none;     /* Safari 2 */
@@ -242,11 +256,11 @@ span{
 }
 
 .icon-contato {
-    width:10px;
-    height:10px;  
+    width:25px;
+    height:25px;  
     margin-right: 2px;
-    margin-left: 2px;
-    margin-bottom: -2px;
+    margin-left: 2px; 
+    margin-bottom: -10px;  
 }
 
 .thumbnail-contato {
@@ -274,11 +288,14 @@ span{
     height: fit-content;  
     padding-right: 5px;      
 }
+ion-footer {
+    display: none;
+    } 
 
 /* Responsivo Display Mobile*/
 @media screen and (max-width: 767px) {
 
-    span {
+    .span {
     display: none;
     }   
     .ion-img {
@@ -312,5 +329,32 @@ span{
         border-top-right-radius: 10px;  
        
     }
-    
+    ion-footer {
+        display: block;
+        } 
+        .p-texto-small {
+            color: rgb(0, 0, 0); 
+            font-size: xx-small;
+            text-align: justify;
+            word-wrap: break-word;
+            text-align: center;
+            height: fit-content;
+            margin-left: 10px;
+            margin-right: 10px;   
+            margin-top: 0px;  
+            -webkit-touch-callout: none;  /* iPhone OS, Safari */
+            -webkit-user-select: none;    /* Chrome, Safari 3 */
+            -khtml-user-select: none;     /* Safari 2 */
+            -moz-user-select: none;       /* Firefox */
+            -ms-user-select: none;        /* IE10+ */
+            user-select: none;            /* Possível implementação no futuro */
+        }  
+        .icon-contato {
+            width:10px;
+            height:10px;  
+            margin-right: 2px;
+            margin-left: 2px; 
+            margin-bottom: -2px;  
+        }
+        
 }

@@ -65,6 +65,7 @@
   --ion-color-light-tint: #f5f6f9;
   /** Constantes **/
   --ion-hover: #ce320b;
+  --ion-hover-tab: #ffffffa8;
   --bg-toolbar: rgb(136, 10, 10);
   --bg-tab: rgb(175, 12, 12);
   --bg-header:rgb(136, 9, 9);
@@ -1131,7 +1132,7 @@ ion-tab-bar {
   margin: 3px;
 }
 ion-tab-button:hover {
-  background-color: var(--ion-hover);
+  background-color: var(--ion-hover-tab);
   border-radius: 5px;
 }
 ion-label {
@@ -1208,6 +1209,22 @@ ion-toolbar {
   user-select: none;
   /* Possível implementação no futuro */
 }
+.p-home {
+  font-size: x-large;
+  --background:transparent;
+  --color:white;
+  padding-left: 10px;
+  -webkit-touch-callout: none;
+  /* iPhone OS, Safari */
+  -webkit-user-select: none;
+  /* Chrome, Safari 3 */
+  /* Safari 2 */
+  -moz-user-select: none;
+  /* Firefox */
+  /* IE10+ */
+  user-select: none;
+  /* Possível implementação no futuro */
+}
 .toobar-footer {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1217,6 +1234,7 @@ ion-toolbar {
 span {
   text-transform: uppercase;
   color: white;
+  margin: 3px;
   font-weight: bold;
   -webkit-touch-callout: none;
   /* iPhone OS, Safari */
@@ -1417,5 +1435,28 @@ span {
     width: 35px;
     height: 35px;
     margin-right: 5px;
+  }
+
+  .p-home {
+    font-size: small;
+    --background:transparent;
+    --color:white;
+    padding-left: 10px;
+    -webkit-touch-callout: none;
+    /* iPhone OS, Safari */
+    -webkit-user-select: none;
+    /* Chrome, Safari 3 */
+    /* Safari 2 */
+    -moz-user-select: none;
+    /* Firefox */
+    /* IE10+ */
+    user-select: none;
+    /* Possível implementação no futuro */
+  }
+
+  ion-tab-bar {
+    background: #af0c0c;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
 }
