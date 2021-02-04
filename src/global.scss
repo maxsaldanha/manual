@@ -43,10 +43,6 @@ ion-tab-button:hover {
     border-radius: 5px; 
 }
 
-ion-label {
-    font-size: small;    
-}
-
 ion-card {
     margin: 5px;
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
@@ -70,16 +66,29 @@ ion-tab-button {
     --color-focused:rgb(117, 6, 6);
 }
 
-ion-item {    
-    --background-hover: var(--ion-hover);  
-    --background-hover-opacity:1;  
-    --color-hover:white;     
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;            /* Possível implementação no futuro */
+ion-item{
+    &.ion-item {    
+        --background-hover: var(--ion-hover);  
+        --background-hover-opacity:1;  
+        --color-hover:white;     
+        -webkit-touch-callout: none;  /* iPhone OS, Safari */
+        -webkit-user-select: none;    /* Chrome, Safari 3 */
+        -khtml-user-select: none;     /* Safari 2 */
+        -moz-user-select: none;       /* Firefox */
+        -ms-user-select: none;        /* IE10+ */
+        user-select: none;            /* Possível implementação no futuro */
+    }
+    &.home {    
+        --background:transparent;
+        --color:white;   
+        padding-left: 10px;
+        -webkit-touch-callout: none;  /* iPhone OS, Safari */
+        -webkit-user-select: none;    /* Chrome, Safari 3 */
+        -khtml-user-select: none;     /* Safari 2 */
+        -moz-user-select: none;       /* Firefox */
+        -ms-user-select: none;        /* IE10+ */
+        user-select: none;            /* Possível implementação no futuro */
+    }
 }
 
 ion-toolbar {
@@ -107,212 +116,44 @@ ion-icon {
     &.red {
       color: rgb(255, 255, 255);
     }
-}
 
-.home {    
-    --background:transparent;
-    --color:white;   
-    padding-left: 10px;
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;            /* Possível implementação no futuro */
-}
-.p-home {
-    font-size: x-large;
-    --background:transparent;
-    --color:white;   
-    padding-left: 10px;
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;            /* Possível implementação no futuro */
-}
-.toobar-footer {
-    height: fit-content;
-    --background:rgb(255, 255, 255);    
-}
-
-.span{
-    color: white;    
-    font-weight: bold;
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;            /* Possível implementação no futuro */
-}
-
-.p-title{   
-    margin-left: 10px; 
-    margin-top: 20px;
-    font-size:medium;
-    font-weight: bold;
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;            /* Possível implementação no futuro */
-}
-
-.p-divider {      
-    font-weight: bolder;
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;            /* Possível implementação no futuro */
-}
-
-.p-texto{    
-    color: black; 
-    font-size: small;
-    text-align: justify;
-    word-wrap: break-word;
-    height: fit-content;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-indent: 10px;
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;            /* Possível implementação no futuro */
-} 
-
-.p-texto05{    
-    color: black; 
-    font-size: small;
-    text-align: justify;
-    word-wrap: break-word;
-    height: fit-content;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-indent: 15px;
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;            /* Possível implementação no futuro */
-} 
-
-.p-textoUP {    
-    color: black; 
-    font-size: small;
-    text-align: justify;
-    word-wrap: break-word;
-    height: fit-content;
-    text-transform: uppercase;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-indent: 15px; 
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;            /* Possível implementação no futuro */
-}
-
-.p-texto-small {
-    color: rgb(255, 255, 255); 
-    font-size: small;
-    text-align: justify;
-    word-wrap: break-word;
-    text-align: right;
-    height: fit-content;
-    margin-left: 10px;
-    margin-right: 10px; 
-    margin-top: 30px;  
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;            /* Possível implementação no futuro */
-}  
-
-.ion-img {    
-    display: block;
-    width: fit-content;
-    height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;     
-}
-
-.icon-red {
-    color:rgb(175, 12, 12);
-    padding-right: 5px;
-}
-
-.icon-contato {
-    width:25px;
-    height:25px;  
-    margin-right: 2px;
-    margin-left: 2px; 
-    margin-bottom: -10px;  
-}
-
-.thumbnail-contato {
-    --size:small;
-}
-.img {    
-    margin: 5px;
-}
-
-/*CSS de Lista não ordernada*/
-.ul-li-white {    
-    color: rgb(255, 255, 255); 
-    text-align: justify;
-    font-size: small;
-    word-wrap: break-word;
-    height: fit-content;  
-    padding-right: 5px;      
-}  
-
-.ul-li {    
-    color: rgb(0, 0, 0); 
-    text-align: justify;
-    font-size: small;
-    word-wrap: break-word;
-    height: fit-content;  
-    padding-right: 5px;      
-}
-ion-footer {
-    display: none;
-    } 
-
-/* Responsivo Display Mobile*/
-@media screen and (max-width: 767px) {
-
-    .span {
-    display: none;
-    }   
-    .ion-img {
-        margin-top: 15px;
-    }    
-    .home{    
-        margin: 0px;   
-        padding: 0px;
-        font-size: x-small;
+    &.icon-red {
+        color:rgb(175, 12, 12);
+        padding-right: 5px;
     }
-    .img {
-        width: 35px;
-        height: 35px;
-        margin-right: 5px;
+}
+
+ion-col {    
+    &.span-col{
+        color: white;    
+        font-weight: bold;
+        -webkit-touch-callout: none;  /* iPhone OS, Safari */
+        -webkit-user-select: none;    /* Chrome, Safari 3 */
+        -khtml-user-select: none;     /* Safari 2 */
+        -moz-user-select: none;       /* Firefox */
+        -ms-user-select: none;        /* IE10+ */
+        user-select: none;            /* Possível implementação no futuro */
     }
-    .p-home {
-        font-size: small;
+}
+
+img {
+    &.icon-contato {
+        width:15px;
+        height:15px;  
+        margin-right: 2px;
+        margin-left: 2px; 
+        margin-bottom: -1px;  
+    }
+    &.img-logo {
+        width:40px;
+        height:40px;  
+      
+    }
+}
+
+p {
+    &.p-home {
+        font-size: x-large;
         --background:transparent;
         --color:white;   
         padding-left: 10px;
@@ -323,17 +164,280 @@ ion-footer {
         -ms-user-select: none;        /* IE10+ */
         user-select: none;            /* Possível implementação no futuro */
     }
+    &.p-title{   
+        margin-left: 10px; 
+        margin-top: 20px;
+        font-size:medium;
+        font-weight: bold;
+        -webkit-touch-callout: none;  /* iPhone OS, Safari */
+        -webkit-user-select: none;    /* Chrome, Safari 3 */
+        -khtml-user-select: none;     /* Safari 2 */
+        -moz-user-select: none;       /* Firefox */
+        -ms-user-select: none;        /* IE10+ */
+        user-select: none;            /* Possível implementação no futuro */
+    }
+    
+    &.p-divider {      
+        font-weight: bolder;
+        -webkit-touch-callout: none;  /* iPhone OS, Safari */
+        -webkit-user-select: none;    /* Chrome, Safari 3 */
+        -khtml-user-select: none;     /* Safari 2 */
+        -moz-user-select: none;       /* Firefox */
+        -ms-user-select: none;        /* IE10+ */
+        user-select: none;            /* Possível implementação no futuro */
+    }
+    
+    &.p-texto{    
+        color: black; 
+        font-size: small;
+        text-align: justify;
+        word-wrap: break-word;
+        height: fit-content;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-indent: 10px;
+        -webkit-touch-callout: none;  /* iPhone OS, Safari */
+        -webkit-user-select: none;    /* Chrome, Safari 3 */
+        -khtml-user-select: none;     /* Safari 2 */
+        -moz-user-select: none;       /* Firefox */
+        -ms-user-select: none;        /* IE10+ */
+        user-select: none;            /* Possível implementação no futuro */
+    } 
+    
+    &.p-texto05{    
+        color: black; 
+        font-size: small;
+        text-align: justify;
+        word-wrap: break-word;
+        height: fit-content;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-indent: 15px;
+        -webkit-touch-callout: none;  /* iPhone OS, Safari */
+        -webkit-user-select: none;    /* Chrome, Safari 3 */
+        -khtml-user-select: none;     /* Safari 2 */
+        -moz-user-select: none;       /* Firefox */
+        -ms-user-select: none;        /* IE10+ */
+        user-select: none;            /* Possível implementação no futuro */
+    } 
+    
+    &.p-textoUP {    
+        color: black; 
+        font-size: small;
+        text-align: justify;
+        word-wrap: break-word;
+        height: fit-content;
+        text-transform: uppercase;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-indent: 15px; 
+        -webkit-touch-callout: none;  /* iPhone OS, Safari */
+        -webkit-user-select: none;    /* Chrome, Safari 3 */
+        -khtml-user-select: none;     /* Safari 2 */
+        -moz-user-select: none;       /* Firefox */
+        -ms-user-select: none;        /* IE10+ */
+        user-select: none;            /* Possível implementação no futuro */
+    }
+    
+    &.p-texto-small {
+        color: rgb(255, 255, 255); 
+        font-size: small;
+        text-align: justify;
+        word-wrap: break-word;
+        height: fit-content;        
+    }  
+
+}
+
+ion-img {
+    &.ion-img {    
+        display: block;
+        width: fit-content;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;     
+    }
+}
+
+/*CSS de Lista não ordernada*/
+ul {
+    &.ul-li-white {    
+        color: rgb(255, 255, 255); 
+        text-align: justify;
+        font-size: small;
+        word-wrap: break-word;
+        height: fit-content;  
+        padding-right: 5px;      
+    }  
+    
+    &.ul-li {    
+        color: rgb(0, 0, 0); 
+        text-align: justify;
+        font-size: small;
+        word-wrap: break-word;
+        height: fit-content;  
+        padding-right: 5px;      
+    }
+}
+
+/* Responsivo Display Mobile*/
+@media screen and (min-width: 1024px) {
+    ion-footer {
+        display: none;
+        } 
+
+    img {
+        &.icon-contato {
+            width:15px;
+            height:15px;  
+            margin-right: 2px;
+            margin-left: 2px; 
+            margin-bottom: -1px;  
+        }
+        &.img-logo {
+            width:80px;
+            height:80px;              
+        }
+    }
+
+    ion-col {    
+        &.span-col{
+            align-items: right;
+            color: white;    
+            font-weight: bold;
+            -webkit-touch-callout: none;  /* iPhone OS, Safari */
+            -webkit-user-select: none;    /* Chrome, Safari 3 */
+            -khtml-user-select: none;     /* Safari 2 */
+            -moz-user-select: none;       /* Firefox */
+            -ms-user-select: none;        /* IE10+ */
+            user-select: none;            /* Possível implementação no futuro */
+        }
+    }
+
+    p {
+        &.p-home {
+            font-size: xx-large;
+            --background:transparent;
+            --color:white;   
+            padding-left: 10px;
+            -webkit-touch-callout: none;  /* iPhone OS, Safari */
+            -webkit-user-select: none;    /* Chrome, Safari 3 */
+            -khtml-user-select: none;     /* Safari 2 */
+            -moz-user-select: none;       /* Firefox */
+            -ms-user-select: none;        /* IE10+ */
+            user-select: none;            /* Possível implementação no futuro */
+        }
+        &.p-title{   
+            margin-left: 10px; 
+            margin-top: 20px;
+            font-size:x-large;
+            font-weight: bold;
+            -webkit-touch-callout: none;  /* iPhone OS, Safari */
+            -webkit-user-select: none;    /* Chrome, Safari 3 */
+            -khtml-user-select: none;     /* Safari 2 */
+            -moz-user-select: none;       /* Firefox */
+            -ms-user-select: none;        /* IE10+ */
+            user-select: none;            /* Possível implementação no futuro */
+        }
+        
+        &.p-divider {      
+            font-weight: bolder;
+            -webkit-touch-callout: none;  /* iPhone OS, Safari */
+            -webkit-user-select: none;    /* Chrome, Safari 3 */
+            -khtml-user-select: none;     /* Safari 2 */
+            -moz-user-select: none;       /* Firefox */
+            -ms-user-select: none;        /* IE10+ */
+            user-select: none;            /* Possível implementação no futuro */
+        }
+        
+        &.p-texto{    
+            color: black; 
+            font-size: large;
+            text-align: justify;
+            word-wrap: break-word;
+            height: fit-content;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-indent: 10px;
+            -webkit-touch-callout: none;  /* iPhone OS, Safari */
+            -webkit-user-select: none;    /* Chrome, Safari 3 */
+            -khtml-user-select: none;     /* Safari 2 */
+            -moz-user-select: none;       /* Firefox */
+            -ms-user-select: none;        /* IE10+ */
+            user-select: none;            /* Possível implementação no futuro */
+        } 
+        
+        &.p-texto05{    
+            color: black; 
+            font-size: large;
+            text-align: justify;
+            word-wrap: break-word;
+            height: fit-content;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-indent: 15px;
+            -webkit-touch-callout: none;  /* iPhone OS, Safari */
+            -webkit-user-select: none;    /* Chrome, Safari 3 */
+            -khtml-user-select: none;     /* Safari 2 */
+            -moz-user-select: none;       /* Firefox */
+            -ms-user-select: none;        /* IE10+ */
+            user-select: none;            /* Possível implementação no futuro */
+        } 
+        
+        &.p-textoUP {    
+            color: black; 
+            font-size: large;
+            text-align: justify;
+            word-wrap: break-word;
+            height: fit-content;
+            text-transform: uppercase;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-indent: 15px; 
+            -webkit-touch-callout: none;  /* iPhone OS, Safari */
+            -webkit-user-select: none;    /* Chrome, Safari 3 */
+            -khtml-user-select: none;     /* Safari 2 */
+            -moz-user-select: none;       /* Firefox */
+            -ms-user-select: none;        /* IE10+ */
+            user-select: none;            /* Possível implementação no futuro */
+        }
+        
+        &.p-texto-small {
+            color: rgb(255, 255, 255); 
+            font-size: small;
+            text-align: right;
+            word-wrap: break-word;
+            height: fit-content;        
+        }  
+    
+    }
+}
+
+/* Responsivo Display Mobile*/
+@media screen and (max-width: 1023px) {
+
+    ion-label {
+        &.span-label {
+            display: none;
+            } 
+    }
+
+    ion-col {
+        &.span-col {
+            display: none;
+        }
+    }
+            
     ion-tab-bar {        
         background:rgb(175, 12, 12); 
         border-top-left-radius: 10px;
-        border-top-right-radius: 10px;  
-       
-    }
-    ion-footer {
-        display: block;
-        } 
-        .p-texto-small {
-            color: rgb(0, 0, 0); 
+        border-top-right-radius: 10px;          
+    }  
+
+    p {
+        &.p-texto-small {
+            color: rgb(255, 255, 255); 
             font-size: xx-small;
             text-align: justify;
             word-wrap: break-word;
@@ -348,13 +452,44 @@ ion-footer {
             -moz-user-select: none;       /* Firefox */
             -ms-user-select: none;        /* IE10+ */
             user-select: none;            /* Possível implementação no futuro */
-        }  
-        .icon-contato {
+        } 
+        &.p-home {
+            font-size: small;
+            --background:transparent;
+            --color:white;   
+            padding-left: 10px;
+            -webkit-touch-callout: none;  /* iPhone OS, Safari */
+            -webkit-user-select: none;    /* Chrome, Safari 3 */
+            -khtml-user-select: none;     /* Safari 2 */
+            -moz-user-select: none;       /* Firefox */
+            -ms-user-select: none;        /* IE10+ */
+            user-select: none;            /* Possível implementação no futuro */
+        }
+    }
+
+    img {
+        &.icon-contato {
             width:10px;
             height:10px;  
             margin-right: 2px;
             margin-left: 2px; 
-            margin-bottom: -2px;  
+            margin-bottom: -1px;  
+        }
+    } 
+
+    ion-icon {
+        &.big {
+            width: 30px;
+            height: 30px;
         }
         
+        &.bigger {
+            width: 100px;
+            height: 100px;
+        }
+        
+        &.red {
+            color: rgb(255, 255, 255);
+        }
+    }    
 }

@@ -64,9 +64,9 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
   /** Constantes **/
-  --ion-hover: #ce320b;
+  --ion-hover: #a19c9a;
   --ion-hover-tab: #ffffffa8;
-  --bg-toolbar: rgb(136, 10, 10);
+  --bg-toolbar: rgb(107, 7, 7);
   --bg-tab: rgb(175, 12, 12);
   --bg-header:rgb(136, 9, 9);
 }
@@ -1135,9 +1135,6 @@ ion-tab-button:hover {
   background-color: var(--ion-hover-tab);
   border-radius: 5px;
 }
-ion-label {
-  font-size: small;
-}
 ion-card {
   margin: 5px;
   -webkit-touch-callout: none;
@@ -1165,10 +1162,25 @@ ion-tab-button {
   background-color: transparent;
   --color-focused:rgb(117, 6, 6);
 }
-ion-item {
+ion-item.ion-item {
   --background-hover: var(--ion-hover);
   --background-hover-opacity:1;
   --color-hover:white;
+  -webkit-touch-callout: none;
+  /* iPhone OS, Safari */
+  -webkit-user-select: none;
+  /* Chrome, Safari 3 */
+  /* Safari 2 */
+  -moz-user-select: none;
+  /* Firefox */
+  /* IE10+ */
+  user-select: none;
+  /* Possível implementação no futuro */
+}
+ion-item.home {
+  --background:transparent;
+  --color:white;
+  padding-left: 10px;
   -webkit-touch-callout: none;
   /* iPhone OS, Safari */
   -webkit-user-select: none;
@@ -1194,10 +1206,24 @@ ion-toolbar {
   user-select: none;
   /* Possível implementação no futuro */
 }
-.home {
-  --background:transparent;
-  --color:white;
-  padding-left: 10px;
+ion-icon.big {
+  width: 40px;
+  height: 40px;
+}
+ion-icon.bigger {
+  width: 100px;
+  height: 100px;
+}
+ion-icon.red {
+  color: white;
+}
+ion-icon.icon-red {
+  color: #af0c0c;
+  padding-right: 5px;
+}
+ion-col.span-col {
+  color: white;
+  font-weight: bold;
   -webkit-touch-callout: none;
   /* iPhone OS, Safari */
   -webkit-user-select: none;
@@ -1209,7 +1235,18 @@ ion-toolbar {
   user-select: none;
   /* Possível implementação no futuro */
 }
-.p-home {
+img.icon-contato {
+  width: 15px;
+  height: 15px;
+  margin-right: 2px;
+  margin-left: 2px;
+  margin-bottom: -1px;
+}
+img.img-logo {
+  width: 40px;
+  height: 40px;
+}
+p.p-home {
   font-size: x-large;
   --background:transparent;
   --color:white;
@@ -1225,29 +1262,7 @@ ion-toolbar {
   user-select: none;
   /* Possível implementação no futuro */
 }
-.toobar-footer {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  --background:rgb(255, 255, 255);
-}
-span {
-  text-transform: uppercase;
-  color: white;
-  margin: 3px;
-  font-weight: bold;
-  -webkit-touch-callout: none;
-  /* iPhone OS, Safari */
-  -webkit-user-select: none;
-  /* Chrome, Safari 3 */
-  /* Safari 2 */
-  -moz-user-select: none;
-  /* Firefox */
-  /* IE10+ */
-  user-select: none;
-  /* Possível implementação no futuro */
-}
-.p-title {
+p.p-title {
   margin-left: 10px;
   margin-top: 20px;
   font-size: medium;
@@ -1263,7 +1278,7 @@ span {
   user-select: none;
   /* Possível implementação no futuro */
 }
-.p-divider {
+p.p-divider {
   font-weight: bolder;
   -webkit-touch-callout: none;
   /* iPhone OS, Safari */
@@ -1276,7 +1291,7 @@ span {
   user-select: none;
   /* Possível implementação no futuro */
 }
-.p-texto {
+p.p-texto {
   color: black;
   font-size: small;
   text-align: justify;
@@ -1298,7 +1313,7 @@ span {
   user-select: none;
   /* Possível implementação no futuro */
 }
-.p-texto05 {
+p.p-texto05 {
   color: black;
   font-size: small;
   text-align: justify;
@@ -1320,7 +1335,7 @@ span {
   user-select: none;
   /* Possível implementação no futuro */
 }
-.p-textoUP {
+p.p-textoUP {
   color: black;
   font-size: small;
   text-align: justify;
@@ -1343,29 +1358,16 @@ span {
   user-select: none;
   /* Possível implementação no futuro */
 }
-.p-texto-small {
-  color: black;
-  font-size: x-small;
+p.p-texto-small {
+  color: white;
+  font-size: small;
   text-align: justify;
   word-wrap: break-word;
-  text-align: center;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin-left: 10px;
-  margin-right: 10px;
-  -webkit-touch-callout: none;
-  /* iPhone OS, Safari */
-  -webkit-user-select: none;
-  /* Chrome, Safari 3 */
-  /* Safari 2 */
-  -moz-user-select: none;
-  /* Firefox */
-  /* IE10+ */
-  user-select: none;
-  /* Possível implementação no futuro */
 }
-.ion-img {
+ion-img.ion-img {
   display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -1377,25 +1379,8 @@ span {
   margin-right: auto;
   padding: 10px;
 }
-.icon-red {
-  color: #af0c0c;
-  padding-right: 5px;
-}
-.icon-contato {
-  width: 10px;
-  height: 10px;
-  margin-right: 2px;
-  margin-left: 2px;
-  margin-bottom: -2px;
-}
-.thumbnail-contato {
-  --size:small;
-}
-.img {
-  margin: 5px;
-}
 /*CSS de Lista não ordernada*/
-.ul-li-white {
+ul.ul-li-white {
   color: white;
   text-align: justify;
   font-size: small;
@@ -1405,7 +1390,7 @@ span {
   height: fit-content;
   padding-right: 5px;
 }
-.ul-li {
+ul.ul-li {
   color: black;
   text-align: justify;
   font-size: small;
@@ -1416,28 +1401,201 @@ span {
   padding-right: 5px;
 }
 /* Responsivo Display Mobile*/
-@media screen and (max-width: 767px) {
-  span {
+@media screen and (min-width: 1024px) {
+  ion-footer {
     display: none;
   }
 
-  .ion-img {
-    margin-top: 15px;
+  img.icon-contato {
+    width: 15px;
+    height: 15px;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: -1px;
+  }
+  img.img-logo {
+    width: 80px;
+    height: 80px;
   }
 
-  .home {
-    margin: 0px;
-    padding: 0px;
-    font-size: x-small;
+  ion-col.span-col {
+    align-items: right;
+    color: white;
+    font-weight: bold;
+    -webkit-touch-callout: none;
+    /* iPhone OS, Safari */
+    -webkit-user-select: none;
+    /* Chrome, Safari 3 */
+    /* Safari 2 */
+    -moz-user-select: none;
+    /* Firefox */
+    /* IE10+ */
+    user-select: none;
+    /* Possível implementação no futuro */
   }
 
-  .img {
-    width: 35px;
-    height: 35px;
-    margin-right: 5px;
+  p.p-home {
+    font-size: xx-large;
+    --background:transparent;
+    --color:white;
+    padding-left: 10px;
+    -webkit-touch-callout: none;
+    /* iPhone OS, Safari */
+    -webkit-user-select: none;
+    /* Chrome, Safari 3 */
+    /* Safari 2 */
+    -moz-user-select: none;
+    /* Firefox */
+    /* IE10+ */
+    user-select: none;
+    /* Possível implementação no futuro */
+  }
+  p.p-title {
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    -webkit-touch-callout: none;
+    /* iPhone OS, Safari */
+    -webkit-user-select: none;
+    /* Chrome, Safari 3 */
+    /* Safari 2 */
+    -moz-user-select: none;
+    /* Firefox */
+    /* IE10+ */
+    user-select: none;
+    /* Possível implementação no futuro */
+  }
+  p.p-divider {
+    font-weight: bolder;
+    -webkit-touch-callout: none;
+    /* iPhone OS, Safari */
+    -webkit-user-select: none;
+    /* Chrome, Safari 3 */
+    /* Safari 2 */
+    -moz-user-select: none;
+    /* Firefox */
+    /* IE10+ */
+    user-select: none;
+    /* Possível implementação no futuro */
+  }
+  p.p-texto {
+    color: black;
+    font-size: large;
+    text-align: justify;
+    word-wrap: break-word;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-indent: 10px;
+    -webkit-touch-callout: none;
+    /* iPhone OS, Safari */
+    -webkit-user-select: none;
+    /* Chrome, Safari 3 */
+    /* Safari 2 */
+    -moz-user-select: none;
+    /* Firefox */
+    /* IE10+ */
+    user-select: none;
+    /* Possível implementação no futuro */
+  }
+  p.p-texto05 {
+    color: black;
+    font-size: large;
+    text-align: justify;
+    word-wrap: break-word;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-indent: 15px;
+    -webkit-touch-callout: none;
+    /* iPhone OS, Safari */
+    -webkit-user-select: none;
+    /* Chrome, Safari 3 */
+    /* Safari 2 */
+    -moz-user-select: none;
+    /* Firefox */
+    /* IE10+ */
+    user-select: none;
+    /* Possível implementação no futuro */
+  }
+  p.p-textoUP {
+    color: black;
+    font-size: large;
+    text-align: justify;
+    word-wrap: break-word;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-indent: 15px;
+    -webkit-touch-callout: none;
+    /* iPhone OS, Safari */
+    -webkit-user-select: none;
+    /* Chrome, Safari 3 */
+    /* Safari 2 */
+    -moz-user-select: none;
+    /* Firefox */
+    /* IE10+ */
+    user-select: none;
+    /* Possível implementação no futuro */
+  }
+  p.p-texto-small {
+    color: white;
+    font-size: small;
+    text-align: right;
+    word-wrap: break-word;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+/* Responsivo Display Mobile*/
+@media screen and (max-width: 1023px) {
+  ion-label.span-label {
+    display: none;
   }
 
-  .p-home {
+  ion-col.span-col {
+    display: none;
+  }
+
+  ion-tab-bar {
+    background: #af0c0c;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  p.p-texto-small {
+    color: white;
+    font-size: xx-small;
+    text-align: justify;
+    word-wrap: break-word;
+    text-align: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    -webkit-touch-callout: none;
+    /* iPhone OS, Safari */
+    -webkit-user-select: none;
+    /* Chrome, Safari 3 */
+    /* Safari 2 */
+    -moz-user-select: none;
+    /* Firefox */
+    /* IE10+ */
+    user-select: none;
+    /* Possível implementação no futuro */
+  }
+  p.p-home {
     font-size: small;
     --background:transparent;
     --color:white;
@@ -1454,9 +1612,23 @@ span {
     /* Possível implementação no futuro */
   }
 
-  ion-tab-bar {
-    background: #af0c0c;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  img.icon-contato {
+    width: 10px;
+    height: 10px;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: -1px;
+  }
+
+  ion-icon.big {
+    width: 30px;
+    height: 30px;
+  }
+  ion-icon.bigger {
+    width: 100px;
+    height: 100px;
+  }
+  ion-icon.red {
+    color: white;
   }
 }
