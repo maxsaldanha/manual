@@ -28,14 +28,15 @@
 /* CSS - Configurações Gerais de Estilo */
 
 ion-content.background {
-    --background: #ffffff;
+    --background:#FFFFFF;
 }
 
 ion-tab-bar {        
-    background:rgb(175, 12, 12); 
+    --background:var(--bg-toolbar);
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px;  
-    margin: 3px; 
+    border-top-right-radius: 10px;   
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 ion-tab-button:hover {    
@@ -45,6 +46,13 @@ ion-tab-button:hover {
 
 ion-card {
     margin: 5px;
+    border: 0 !important;
+    border: none !important;
+    border-style: none !important;
+    position: relative;
+    height: fit-content;
+    background: transparent !important;
+    transition:all 0.5s;
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
     -webkit-user-select: none;    /* Chrome, Safari 3 */
     -khtml-user-select: none;     /* Safari 2 */
@@ -91,7 +99,8 @@ ion-item{
     }
 }
 
-ion-toolbar {
+ion-toolbar { 
+    &.default {
     --background:var(--bg-toolbar);
     --color:white;    
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
@@ -100,7 +109,19 @@ ion-toolbar {
     -moz-user-select: none;       /* Firefox */
     -ms-user-select: none;        /* IE10+ */
     user-select: none;            /* Possível implementação no futuro */
-}
+    } 
+    &.home {
+        --background: url(/../../assets/background/sangue-backgrond.png) 0 0/100% 100% no-repeat;
+        --color:white;    
+        -webkit-touch-callout: none;  /* iPhone OS, Safari */
+        -webkit-user-select: none;    /* Chrome, Safari 3 */
+        -khtml-user-select: none;     /* Safari 2 */
+        -moz-user-select: none;       /* Firefox */
+        -ms-user-select: none;        /* IE10+ */
+        user-select: none;            /* Possível implementação no futuro */
+        }     
+    
+    }
 
 ion-icon {
     &.big {
@@ -430,7 +451,7 @@ ul {
     }
             
     ion-tab-bar {        
-        background:rgb(175, 12, 12); 
+        --background:var(--bg-toolbar);
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;          
     }  
