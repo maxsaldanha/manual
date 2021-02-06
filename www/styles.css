@@ -65,10 +65,8 @@
   --ion-color-light-tint: #f5f6f9;
   /** Constantes **/
   --ion-hover: #a19c9a;
-  --ion-hover-tab: #ffffffa8;
-  --bg-toolbar: rgb(107, 7, 7);
-  --bg-tab: rgb(175, 12, 12);
-  --bg-header:rgb(136, 9, 9);
+  --ion-hover-tab: #d11919a8;
+  --bgcolor-default:rgb(104, 10, 10);
 }
 @charset "UTF-8";
 /*
@@ -1123,13 +1121,14 @@ sub {
 }
 /* CSS - Configurações Gerais de Estilo */
 ion-content.background {
-  --background: #ffffff;
+  --background:#FFFFFF;
 }
 ion-tab-bar {
-  background: #af0c0c;
+  --background:var(--bgcolor-default);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  margin: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 ion-tab-button:hover {
   background-color: var(--ion-hover-tab);
@@ -1137,6 +1136,15 @@ ion-tab-button:hover {
 }
 ion-card {
   margin: 5px;
+  border: 0 !important;
+  border: none !important;
+  border-style: none !important;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: transparent !important;
+  transition: all 0.5s;
   -webkit-touch-callout: none;
   /* iPhone OS, Safari */
   -webkit-user-select: none;
@@ -1192,8 +1200,22 @@ ion-item.home {
   user-select: none;
   /* Possível implementação no futuro */
 }
-ion-toolbar {
-  --background:var(--bg-toolbar);
+ion-toolbar.default {
+  --background:var(--bgcolor-default);
+  --color:white;
+  -webkit-touch-callout: none;
+  /* iPhone OS, Safari */
+  -webkit-user-select: none;
+  /* Chrome, Safari 3 */
+  /* Safari 2 */
+  -moz-user-select: none;
+  /* Firefox */
+  /* IE10+ */
+  user-select: none;
+  /* Possível implementação no futuro */
+}
+ion-toolbar.home {
+  --background: url(/../../assets/background/sangue-backgrond.png) 0 0/100% 100% no-repeat;
   --color:white;
   -webkit-touch-callout: none;
   /* iPhone OS, Safari */
@@ -1567,7 +1589,7 @@ ul.ul-li {
   }
 
   ion-tab-bar {
-    background: #af0c0c;
+    --background:var(--bgcolor-default);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }

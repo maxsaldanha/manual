@@ -32,7 +32,7 @@ ion-content.background {
 }
 
 ion-tab-bar {        
-    --background:var(--bg-toolbar);
+    --background:var(--bgcolor-default);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;   
     margin-left: 3px;
@@ -101,7 +101,7 @@ ion-item{
 
 ion-toolbar { 
     &.default {
-    --background:var(--bg-toolbar);
+    --background:var(--bgcolor-default);
     --color:white;    
     -webkit-touch-callout: none;  /* iPhone OS, Safari */
     -webkit-user-select: none;    /* Chrome, Safari 3 */
@@ -451,7 +451,7 @@ ul {
     }
             
     ion-tab-bar {        
-        --background:var(--bg-toolbar);
+        --background:var(--bgcolor-default);
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;          
     }  
