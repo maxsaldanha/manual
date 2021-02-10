@@ -35,8 +35,7 @@ ion-tab-bar {
     --background:var(--bgcolor-default);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;   
-    margin-left: 3px;
-    margin-right: 3px;
+    margin: 3px;
 }
 
 ion-tab-button:hover {    
@@ -101,17 +100,7 @@ ion-item{
 
 ion-toolbar { 
     &.default {
-    --background:var(--bgcolor-default);
-    --color:white;    
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;            /* Possível implementação no futuro */
-    } 
-    &.home {
-        --background: url(/../../assets/background/sangue-backgrond.png) 0 0/100% 100% no-repeat;
+        --background:var(--bgcolor-default);
         --color:white;    
         -webkit-touch-callout: none;  /* iPhone OS, Safari */
         -webkit-user-select: none;    /* Chrome, Safari 3 */
@@ -119,10 +108,20 @@ ion-toolbar {
         -moz-user-select: none;       /* Firefox */
         -ms-user-select: none;        /* IE10+ */
         user-select: none;            /* Possível implementação no futuro */
-        }     
+    } 
+    &.home {
+        --background: url(/../../assets/background/sangue-backgrond.png) 0 0/100% 100% no-repeat;   
+        --color:white;    
+        -webkit-touch-callout: none;  /* iPhone OS, Safari */
+        -webkit-user-select: none;    /* Chrome, Safari 3 */
+        -khtml-user-select: none;     /* Safari 2 */
+        -moz-user-select: none;       /* Firefox */
+        -ms-user-select: none;        /* IE10+ */
+        user-select: none;            /* Possível implementação no futuro */
+    }     
     
-    }
-
+}       
+    
 ion-icon {
     &.big {
       width: 40px;
@@ -281,6 +280,9 @@ ion-img {
     }
 }
 
+a:link { 
+ text-decoration:none; 
+} 
 /*CSS de Lista não ordernada*/
 ul {
     &.ul-li-white {    

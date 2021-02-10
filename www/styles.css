@@ -67,6 +67,12 @@
   --ion-hover: #a19c9a;
   --ion-hover-tab: #d11919a8;
   --bgcolor-default:rgb(104, 10, 10);
+  /*--ion-background-color: #810c0c;*/
+  /* Retirar o background de todas ion-content
+  ion-content{
+    --background:none;
+  }
+  */
 }
 @charset "UTF-8";
 /*
@@ -1127,8 +1133,7 @@ ion-tab-bar {
   --background:var(--bgcolor-default);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  margin-left: 3px;
-  margin-right: 3px;
+  margin: 3px;
 }
 ion-tab-button:hover {
   background-color: var(--ion-hover-tab);
@@ -1216,6 +1221,7 @@ ion-toolbar.default {
 }
 ion-toolbar.home {
   --background: url(/../../assets/background/sangue-backgrond.png) 0 0/100% 100% no-repeat;
+  /*--background: linear-gradient(162deg, rgba(134, 9, 9, 0.8) 20%, rgba(185, 12, 12, 0.521) 100%), url(/../../assets/background/sangue-backgrond_top.png) bottom no-repeat;*/
   --color:white;
   -webkit-touch-callout: none;
   /* iPhone OS, Safari */
@@ -1400,6 +1406,9 @@ ion-img.ion-img {
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
+}
+a:link {
+  text-decoration: none;
 }
 /*CSS de Lista não ordernada*/
 ul.ul-li-white {
