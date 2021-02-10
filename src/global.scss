@@ -27,8 +27,14 @@
 
 /* CSS - Configurações Gerais de Estilo */
 
-ion-content.background {
-    --background:#FFFFFF;
+ion-content {
+    &.background-home {
+        --background:#530909;
+    }
+
+    &.background {
+        --background:#ffffff;
+    }
 }
 
 ion-tab-bar {        
