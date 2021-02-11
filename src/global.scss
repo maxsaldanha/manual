@@ -116,7 +116,7 @@ ion-toolbar {
         user-select: none;            /* Possível implementação no futuro */
     } 
     &.home {
-        --background: url(/../../assets/background/sangue-backgrond.png) 0 0/100% 100% no-repeat;   
+        --background: url(/../../assets/background/sangue_fundo.png) 0 0/100% 100% no-repeat;   
         --color:white;    
         -webkit-touch-callout: none;  /* iPhone OS, Safari */
         -webkit-user-select: none;    /* Chrome, Safari 3 */
